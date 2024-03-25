@@ -1,5 +1,5 @@
 import { Sequelize, DataTypes } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '..';
 
 // Define the Booking model
 export const Booking = sequelize.define('Booking', {
@@ -26,5 +26,9 @@ export const Booking = sequelize.define('Booking', {
     validate: {
       isIn: [['pending', 'confirmed', 'recheduled', 'canceled']],
     },
+  },
+  credit: {
+    type: DataTypes.STRING,
+    allowNull: false,
   },
 });

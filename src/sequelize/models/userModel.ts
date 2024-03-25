@@ -1,5 +1,5 @@
 import { Sequelize, DataTypes } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '..';
 
 // Define the Credit model
 export const User = sequelize.define('User', {

@@ -1,5 +1,5 @@
 import { Sequelize, DataTypes } from 'sequelize';
-import sequelize from '../db';
+import sequelize from '..';
 
 export const BookingStatusHistory = sequelize.define('BookingStatusHistory', {
   status: {
