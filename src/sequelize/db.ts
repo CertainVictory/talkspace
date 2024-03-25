@@ -12,4 +12,6 @@ const sequelize = new Sequelize(
   }
 );
 
+applyAssociations(sequelize);
+
 export default sequelize;
